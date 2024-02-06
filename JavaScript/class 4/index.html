@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------
-Function,Objects
+Function,Objects,Events
 ---------------------------------------------------------------------------------
 
 Function
@@ -52,3 +52,80 @@ document.getElementById("demo").innerHTML = "The car type is " + car.type;
 
 </body>
 </html>
+
+
+---------------------------------------------------------------------------------
+
+An HTML event can be something the browser does, or something a user does.
+
+Here are some examples of HTML events:
+
+An HTML web page has finished loading
+An HTML input field was changed
+An HTML button was clicked
+Often, when events happen, you may want to do something.
+
+JavaScript lets you execute code when events are detected.
+
+HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+
+
+<!-- Result -->
+
+Current Time will Show on your screen when you click the button
+
+---------------------------
+
+Event in Event
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+</body>
+</html>
+
+<!-- Result  -->
+
+This Time is ka jo button ha us ko click krne pr us button ki jaga Current time show hojyga
+
+-----------------------
+
+Event in Function
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<p>Click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> 
