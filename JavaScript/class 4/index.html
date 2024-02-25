@@ -634,7 +634,7 @@ The replace() method replaces a specified value with another value in a string:
 <body>
 
 <h1>JavaScript String Methods</h1>
-<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+<p>Replace "Microsoft" with "MsOffice" in the paragraph below:</p>
 
 <button onclick="myFunction()">Try it</button>
 
@@ -650,3 +650,39 @@ function myFunction() {
 
 </body>
 </html>
+
+---------------------------------------------------------------------------------
+
+replaceAll()
+
+The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+
+If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown.
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Strings</h1>
+<h2>The replaceAll() Method</h2>
+
+<p>ES2021 intoduced the string method replaceAll().</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "I love cats. Cats are very easy to love. Cats are very popular."
+text = text.replaceAll("Cats","Dogs");
+text = text.replaceAll("cats","dogs");
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html> -->
+
+result
+
+ES2021 intoduced the string method replaceAll().
+
+I love dogs. Dogs are very easy to love. Dogs are very popular.
+
