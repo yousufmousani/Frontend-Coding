@@ -67,3 +67,35 @@ The method is called string interpolation.
 The syntax is:
 
 ${...}
+
+------------------------------------------------------------------------------------------
+
+Expression Substitution
+
+
+Template Strings allow expressions in strings:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Template Strings</h1>
+<p>Templates allow variables in strings:</p>
+
+<p id="demo"></p>
+
+<p>Templates are not supported in Internet Explorer.</p>
+
+<script>
+let price = 10;
+let VAT = 0.25;
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+document.getElementById("demo").innerHTML = total;
+</script>
+
+</body>
+</html>
+
+Result 
+12.50
